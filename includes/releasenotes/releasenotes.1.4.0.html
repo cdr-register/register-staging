@@ -222,6 +222,9 @@
             <a href="#v1-4-0-release-notes" class="toc-h1 toc-link" data-title="V1.4.0 Release Notes">V1.4.0 Release Notes</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#introduction" class="toc-h2 toc-link" data-title="Introduction">Introduction</a>
+                  </li>
+                  <li>
                     <a href="#consumer-data-right-register" class="toc-h2 toc-link" data-title="Consumer Data Right Register">Consumer Data Right Register</a>
                   </li>
                   <li>
@@ -229,6 +232,9 @@
                   </li>
                   <li>
                     <a href="#security-profile" class="toc-h2 toc-link" data-title="Security Profile">Security Profile</a>
+                  </li>
+                  <li>
+                    <a href="#register-apis" class="toc-h2 toc-link" data-title="Register APIs">Register APIs</a>
                   </li>
               </ul>
           </li>
@@ -248,6 +254,22 @@
             </aside>
         <h1 id='v1-4-0-release-notes'>V1.4.0 Release Notes</h1>
 <p>Release notes for version 1.4.0 of the <a href="../../">CDR Register Design</a>.</p>
+<h2 id='introduction'>Introduction</h2>
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Change</th>
+<th>GitHub Issue</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="../../#data-standards-body">Data Standards Body</a></td>
+<td>Updated DSB&#39;s role</td>
+<td></td>
+<td>- Updated DSB&#39;s role to align with the Consumer Data Standards website</td>
+</tr>
+</tbody></table>
 <h2 id='consumer-data-right-register'>Consumer Data Right Register</h2>
 <table><thead>
 <tr>
@@ -296,6 +318,12 @@
 <td>- Corrected description to reference JWT instead of ID token as ID tokens are not relevant in authenticating with the Register</td>
 </tr>
 <tr>
+<td><a href="../../#client-authentication">Client Authentication</a></td>
+<td>Updated client authentication from CDR Register</td>
+<td><a href="https://github.com/cdr-register/register/issues/139">#139</a></td>
+<td>Updated reference to the CDS for calls made from the CDR Register to participants</td>
+</tr>
+<tr>
 <td><a href="../../#client-registration-management">Client Registration Management</a></td>
 <td>Updated Client Registration Management</td>
 <td><a href="https://github.com/cdr-register/register/issues/166">#166</a></td>
@@ -310,14 +338,36 @@
 <tr>
 <td><a href="../../#certificate-management">Certificate Management</a></td>
 <td>Added Certificate Validation</td>
-<td><a href="https://github.com/cdr-register/register/issues/113">#153</a></td>
-<td>- Added section summarising certificate validation requirements and referencing the artcle on the <a href="https://cdr-support.zendesk.com/hc/en-us/articles/900005826963-Certificate-Validation">CDR Support Portal</a></td>
+<td><a href="https://github.com/cdr-register/register/issues/113">#113</a></td>
+<td>- Added section summarising certificate validation requirements and referencing the article on the <a href="https://cdr-support.zendesk.com/hc/en-us/articles/900005826963-Certificate-Validation">CDR Support Portal</a></td>
 </tr>
 <tr>
 <td><a href="../../#certificate-management">Certificate Management</a></td>
 <td>Added OCSP Stapling Clarification</td>
-<td><a href="https://github.com/cdr-register/register/issues/113">#153</a></td>
+<td><a href="https://github.com/cdr-register/register/issues/113">#113</a></td>
 <td>- Added clarification that OCSP stapling is not a requirement for certificate management</td>
+</tr>
+</tbody></table>
+<h2 id='register-apis'>Register APIs</h2>
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Change</th>
+<th>GitHub Issue</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="../../#getsoftwarestatementassertion-ssa">Get SSA API</a></td>
+<td>Updated Swagger error codes</td>
+<td><a href="https://github.com/cdr-register/register/issues/142">#142</a></td>
+<td>Added 422 error code for invalid SSA fields. Updated remaining error code descriptions</td>
+</tr>
+<tr>
+<td><a href="../../#consumer-data-right-cdr-register-apis">General</a></td>
+<td>Updated Swagger X-V Header description</td>
+<td><a href="https://github.com/cdr-register/register/issues/133">#133</a></td>
+<td>Corrected the X-V header description to align to the <a href="https://consumerdatastandardsaustralia.github.io/standards/#http-headers">CDS Headers</a></td>
 </tr>
 </tbody></table>
 

@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.2.0",
+    "version": "1.4.0",
     "title": "Consumer Data Right (CDR) Register - Participant Discovery APIs"
   },
   "schemes": [
@@ -78,10 +78,10 @@
             }
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Invalid Bearer Token"
           },
           "406": {
-            "description": "Not Acceptable"
+            "description": "Invalid x-v header</br>Invalid Accept header"
           }
         },
         "x-scopes": [
@@ -142,22 +142,28 @@
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid industry path parameter</br>Invalid SoftwareProductId",
             "schema": {
               "$ref": "#/definitions/ResponseErrorList"
             }
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Invalid Bearer Token"
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Invalid BrandId",
             "schema": {
               "$ref": "#/definitions/ResponseErrorList"
             }
           },
           "406": {
-            "description": "Not Acceptable"
+            "description": "Invalid x-v header</br>Invalid Accept header"
+          },
+          "422": {
+            "description": "SSA fields invalid or incomplete",
+            "schema": {
+              "$ref": "#/definitions/ResponseErrorList"
+            }
           }
         },
         "x-scopes": [
@@ -207,7 +213,7 @@
             }
           },
           "406": {
-            "description": "Not Acceptable"
+            "description": "Invalid x-v header</br>Invalid Accept header"
           }
         }
       }
@@ -254,7 +260,7 @@
             }
           },
           "406": {
-            "description": "Not Acceptable"
+            "description": "Invalid x-v header</br>Invalid Accept header"
           }
         }
       }
@@ -307,7 +313,7 @@
             }
           },
           "406": {
-            "description": "Not Acceptable"
+            "description": "Invalid x-v header</br>Invalid Accept header"
           }
         }
       }
@@ -325,7 +331,7 @@
       "name": "x-v",
       "in": "header",
       "required": false,
-      "description": "The [version](https://consumerdatastandardsaustralia.github.io/standards/#response-headers) of the API end point that the CDR Register has responded with",
+      "description": "The [version](https://consumerdatastandardsaustralia.github.io/standards/#response-headers) of the API end point requested by the client. Must be set to a positive integer.",
       "type": "string"
     },
     "Industry": {
