@@ -228,6 +228,9 @@
                     <a href="#consumer-data-right-register" class="toc-h2 toc-link" data-title="Consumer Data Right Register">Consumer Data Right Register</a>
                   </li>
                   <li>
+                    <a href="#client-registration" class="toc-h2 toc-link" data-title="Client Registration">Client Registration</a>
+                  </li>
+                  <li>
                     <a href="#participant-statuses" class="toc-h2 toc-link" data-title="Participant Statuses">Participant Statuses</a>
                   </li>
                   <li>
@@ -285,6 +288,28 @@
 <td><a href="https://github.com/cdr-register/register/issues/163">#163</a></td>
 <td>- Participant Brands section directs reader to the article provided on the <a href="https://cdr-support.zendesk.com/hc/en-us/articles/900005881263-Brands-in-the-Consumer-Data-Right-Ecosystem">CDR Support Portal</a></td>
 </tr>
+<tr>
+<td><a href="../../#data-holder-2">Data Holder</a></td>
+<td>Updated section on data holder</td>
+<td><a href="https://github.com/cdr-register/register/issues/158">#158</a></td>
+<td>- Clarified metrics collection occurs per data holder brand</td>
+</tr>
+</tbody></table>
+<h2 id='client-registration'>Client Registration</h2>
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Change</th>
+<th>GitHub Issue</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="../../#registration-validation">Registration Validation</a></td>
+<td>Updated section on registration validation</td>
+<td><a href="https://github.com/cdr-register/register/issues/167">#167</a></td>
+<td>- Provided reference to the JWKS endpoint published by the CDR Register used for SSA signature verification</td>
+</tr>
 </tbody></table>
 <h2 id='participant-statuses'>Participant Statuses</h2>
 <table><thead>
@@ -300,6 +325,12 @@
 <td>Added section on archiving entities</td>
 <td><a href="https://github.com/cdr-register/register/issues/164">#164</a></td>
 <td>- Archiving section covers logic when entities are removed from the API results</td>
+</tr>
+<tr>
+<td><a href="../../#checking-request-validity">Checking Request Validity</a></td>
+<td>Updated section on Request for Consent Withdrawal</td>
+<td><a href="https://github.com/cdr-register/register/issues/156">#156</a></td>
+<td>- Clarified JWKS call by ADR to DH to authenticate request</td>
 </tr>
 </tbody></table>
 <h2 id='security-profile'>Security Profile</h2>
@@ -357,6 +388,18 @@
 <th>Description</th>
 </tr>
 </thead><tbody>
+<tr>
+<td><a href="../../#getopenidproviderconfig-ssa">GetOpenIdProviderConfig</a></td>
+<td>Added API for OIDC Config discovery</td>
+<td><a href="https://github.com/cdr-register/register/issues/110">#110</a></td>
+<td>Added GetOpenIdProviderConfig API as currently being exposed by the CDR Register</td>
+</tr>
+<tr>
+<td><a href="../../#getjwks">GetJWKS</a></td>
+<td>Added API for CDR Register JWKS</td>
+<td><a href="https://github.com/cdr-register/register/issues/110">#110</a></td>
+<td>Added GetJWKS API as currently being exposed by the CDR Register</td>
+</tr>
 <tr>
 <td><a href="../../#getsoftwarestatementassertion-ssa">Get SSA API</a></td>
 <td>Updated Swagger error codes</td>
