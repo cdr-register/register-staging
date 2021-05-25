@@ -1297,7 +1297,7 @@ A digitally signed JSON Web Token (JWT) <strong>[RFC7519]</strong> that asserts 
 <td><strong>scope</strong></td>
 <td>Required</td>
 <td><i class="icon-check"></i></td>
-<td>String containing a space-separated list of scope values that the client can use when requesting access tokens. </br>These CDS scope values are defined at: <a href="https://consumerdatastandardsaustralia.github.io/standards/#authorisation-scopes">Authorisation Scopes</a></br>The DCR scope value is defined at: <a href="#client-registration-management">Client Registration Management</a></td>
+<td>String containing a space-separated list of scope values that the client can use when requesting access tokens. </br>These CDS scope values are defined at: <a href="https://consumerdatastandardsaustralia.github.io/standards/#authorisation-scopes">Authorisation Scopes</a></br>The DCR scope value is defined at: <a href="#client-registration-management">Client Registration Management</a></br></br>As per the <a href="https://consumerdatastandardsaustralia.github.io/standards/#scopes-and-claims">CDS Scopes and Claims</a>, <strong>openid</strong> and <strong>profile</strong> are included in the SSA</td>
 </tr>
 </tbody></table>
 
@@ -1457,7 +1457,7 @@ Accept: application/json
 <tr>
 <td><strong>request_object_signing_alg</strong></td>
 <td>Optional</td>
-<td>Algorithm which the ADR expects to sign the request object if a request object will be part of the authorization request sent to the Data Holder</br></br>Supported values as constrained by <strong>[FAPI-RW]</strong></td>
+<td>Algorithm which the ADR expects to sign the request object if a request object will be part of the authorization request sent to the Data Holder</br></br>If field not present in the request, data holders are expected to respond with an appropriate default value</br></br>Supported values as constrained by <strong>[FAPI-RW]</strong></td>
 </tr>
 <tr>
 <td><strong>software_statement</strong></td>
@@ -5870,7 +5870,7 @@ To perform this operation, you must be authenticated and authorised with the fol
 <tr>
 <td>request_object_signing_alg</td>
 <td>string</td>
-<td>false</td>
+<td>true</td>
 <td>none</td>
 <td>Algorithm which the ADR expects to sign the request object if a request object will be part of the authorization request sent to the Data Holder</td>
 </tr>

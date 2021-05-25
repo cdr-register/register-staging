@@ -258,6 +258,18 @@
 </tr>
 </thead><tbody>
 <tr>
+<td><a href="../../#dynamic-client-registration">SSA Definition</a></td>
+<td>Updated SSA definition</td>
+<td><a href="https://github.com/cdr-register/register/issues/173">#173</a></td>
+<td>- Added commentary that <strong>openid</strong> and <strong>profile</strong> are part of the SSA scope definition</td>
+</tr>
+<tr>
+<td><a href="../../#dynamic-client-registration">SSA Definition</a></td>
+<td>Updated Registration Request using JWT</td>
+<td><a href="https://github.com/cdr-register/register/issues/79">#79</a></td>
+<td>- Added commentary that <code>request_object_signing_alg</code> is optional in the request and data holders are expected to use an appropriate default as required</td>
+</tr>
+<tr>
 <td><a href="../../#dynamic-client-registration">Sector Identifiers</a></td>
 <td>Updated Sector Identifiers section</td>
 <td><a href="https://github.com/cdr-register/register/issues/170">#170</a></td>
@@ -267,7 +279,7 @@
 <td><a href="../../#dynamic-client-registration">Sector Identifiers</a></td>
 <td>Updated Sector Identifiers section</td>
 <td><a href="https://github.com/cdr-register/register/issues/176">#176</a></td>
-<td>- Corrected typo for PPID Pairwise Pseudonymous Identifier</td>
+<td>- Corrected typo for Pairwise Pseudonymous Identifier (PPID)</td>
 </tr>
 </tbody></table>
 <h2 id='participant-statuses'>Participant Statuses</h2>
@@ -299,19 +311,25 @@
 <td><a href="../../#tocSregistrationproperties">DCR API Swagger</a></td>
 <td>Updated RegistrationProperties schema</td>
 <td><a href="https://github.com/cdr-register/register/issues/172">#172</a></td>
-<td>- Added <code>legal_entity_id</code>, <code>legal_entity_name</code> to the schema definition</td>
+<td>- Added <code>legal_entity_id</code>, <code>legal_entity_name</code> to the RegistrationProperties schema definition as optional fields</td>
 </tr>
 <tr>
 <td><a href="../../#tocSregistrationproperties">DCR API Swagger</a></td>
 <td>Updated RegistrationProperties schema</td>
 <td><a href="https://github.com/cdr-register/register/issues/84">#84</a></td>
-<td>- Added <code>software_roles</code> to the schema definition</td>
+<td>- Added <code>software_roles</code> to the RegistrationProperties schema definition as an optional field</td>
 </tr>
 <tr>
 <td><a href="../../#tocSregistrationproperties">DCR API Swagger</a></td>
 <td>Updated RegistrationProperties schema</td>
 <td><a href="https://github.com/cdr-register/register/issues/173">#173</a></td>
-<td>- Added <code>profile</code> to the list of scopes in the SSA and to the schema definition</td>
+<td>- Added <code>profile</code> to the list of scopes in the schema definition example</td>
+</tr>
+<tr>
+<td><a href="../../#tocSregistrationproperties">DCR API Swagger</a></td>
+<td>Updated RegistrationProperties schema</td>
+<td><a href="https://github.com/cdr-register/register/issues/79">#79</a></td>
+<td>- Changed <code>request_object_signing_alg</code> to mandatory in the RegistrationProperties schema definition</td>
 </tr>
 </tbody></table>
 

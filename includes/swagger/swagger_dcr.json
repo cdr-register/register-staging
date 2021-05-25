@@ -202,6 +202,7 @@
         "token_endpoint_auth_method",
         "id_token_encrypted_response_alg",
         "id_token_encrypted_response_enc",
+        "request_object_signing_alg",
         "grant_types",
         "response_types",
         "software_statement"
